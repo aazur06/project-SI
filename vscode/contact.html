@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <button onclick="window.location.href='index.html'" style="position: absolute; top: 25px; left: 15px; padding:10px;">Povratak na početnu</button>
+    <title>Contact-page</title>
+    <link rel="stylesheet" href="style.css"> 
+<body>
+    <header>
+        <h1>Kontakt</h1>
+    </header>
+    <main>
+        <div class="contact-form form">
+            <h3>Prijavite problem:</h3>
+            <form action="submit-contact" method="post">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" placeholder="Ime..." required>
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime" placeholder="Prezime..." required>
+                <label for="telefon">Broj telefona:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="060-000-000">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="neko@email.com" required>
+                <label for="poruka">Poruka:</label>
+                <textarea id="poruka" name="poruka" rows="5" required></textarea><br><br>
+                <button type="submit">Pošalji feedback</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
